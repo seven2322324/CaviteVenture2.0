@@ -1,0 +1,31 @@
+/* App.module.css */
+.bookContainer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto; /* Center the book */
+}
+
+/* Large screens (>1024px) */
+@media (min-width: 1024px) {
+ .bookContainer {
+   width: 80vw; /* Fixed width */
+   height: 60vh; /* Fixed height */
+ }
+}
+
+/* Medium screens (600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+ .bookContainer {
+   width: 85vw; /* Slightly smaller */
+   height: 65vh;
+ }
+}
+
+/* Small screens (<600px) */
+@media (max-width: 600px) {
+ .bookContainer {
+   width: 90vw; /* Smaller width */
+   height: 70vh; /* Fixed height */
+ }
+}
